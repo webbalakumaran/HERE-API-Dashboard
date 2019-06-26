@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Gladiators</title>
+    <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1549984893" />
+ <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+ <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+ <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+ <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+
+ <style media="screen">
+   @media only screen and (min-width: 993px){
+      nav a.sidenav-trigger {
+           display: block!important;
+      }
+    }
+    .theme{
+      background-color:#760C10!important;
+    }
+    @media only screen and (max-width: 768px) {/*mobile*/
+      body{
+        overflow-y: scroll!important;
+      }
+      .truck_details{
+        zoom:60%;
+      }
+    }
+ </style>
+  </head>
+  <body style="overflow-y:hidden;">
+    <nav class="theme">
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <div class="row">
+
+          <div class="col m5">
+            <h5>Code Gladiators</h5>
+          </div>
+          <div class="col m4">
+              <h5>Truck details</h5>
+          </div>
+          <div class="col m4">
+
+          </div>
+        </div>
+    </nav>
+
+ <ul id="slide-out" class="sidenav">
+   <li><div class="user-view">
+     <div class="background">
+       <!-- <img src="images/office.jpg"> -->
+     </div>
+     <a href="#user"><img  src="cg.png"></a>
+   </div></li>
+   <li><a href="index.html">
+     <!-- <i class="material-icons">cloud</i> -->
+     Dash Board</a></li>
+     <li><a href="raw_details.html">
+       <!-- <i class="material-icons">cloud</i> -->
+       Raw Materials</a></li>
+       <li><a href="product_details.html">
+         <!-- <i class="material-icons">cloud</i> -->
+         Processed Goods</a></li>
+ </ul>
+<!--Nav Bar ends here-->
+
+  <div class="row truck_details">
+      <div class="card horizontal">
+      <div class="card-image">
+        <img src="r.png" style="zoom:90%">
+      </div>
+      <div class="card-stacked">
+        <br>
+        <div class="card-content">
+          <h4>No. of trucks with raw materials = 4</h4>
+          <center>
+          <img src="truck.png" alt="" class="responsive-img" style="width:10%">
+        </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="row">
+      <div class="col m3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/r1.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"><b>Order ID 1044</b><i class="material-icons right">more_vert</i></span>
+            <p><a href="r1.html">View On Map</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"><b>Order ID 1044</b><i class="material-icons right">close</i></span>
+            <div class="">
+              <div class="container">
+                <br>
+                <div class="row">
+                  <div class="col m6">
+                    <b>Reg . No :</b>
+                  </div>
+                  TN 04 5671
+                  <div class="col m6">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col m6">
+                    <b>From :</b>
+                  </div>
+                  <div class="col m6">
+                    Vadapalani
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col m6">
+                    <b>To :</b>
+                  </div>
+                  <div class="col m6">
+                    Tambaram
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col m6">
+                    <b>ETA :</b>
+                  </div>
+                  <div class="col m6">
+                    4hrs
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col m6">
+                    <b>Charges :</b>
+                  </div>
+                  <div class="col m6">
+                    1000 INR
+                  </div>
+                </div>
+              </div>
+              <p>The truck contains hardware for manufacturing of computer hardwares</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col m3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/r2.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"><b>Order ID 1053</b><i class="material-icons right">more_vert</i></span>
+            <p><a href="r2.html">View On Map</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"><b>Order ID 1053</b><i class="material-icons right">close</i></span>
+            <div class="">
+              <div class="container">
+                <br>
+                <div class="row">
+                  <div class="col m6">
+                    <b>Reg . No :</b>
+                  </div>
+                  TN 04 5671
+                  <div class="col m6">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col m6">
+                    <b>From :</b>
+                  </div>
+                  <div class="col m6">
+                    Vadapalani
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col m6">
+                    <b>To :</b>
+                  </div>
+                  <div class="col m6">
+                    Tambaram
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col m6">
+                    <b>ETA :</b>
+                  </div>
+                  <div class="col m6">
+                    4hrs
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col m6">
+                    <b>Charges :</b>
+                  </div>
+                  <div class="col m6">
+                    1000 INR
+                  </div>
+                </div>
+              </div>
+              <p>The truck contains hardware for manufacturing of computer hardwares</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col m3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/r3.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"><b>Order ID 1060</b><i class="material-icons right">more_vert</i></span>
+            <p><a href="r3.html">View On Map</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"><b>Order ID 1060</b><i class="material-icons right">close</i></span>
+            <div class="container">
+              <br>
+              <div class="row">
+                <div class="col m6">
+                  <b>Reg . No :</b>
+                </div>
+                TN 04 5671
+                <div class="col m6">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m6">
+                  <b>From :</b>
+                </div>
+                <div class="col m6">
+                  Vadapalani
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m6">
+                  <b>To :</b>
+                </div>
+                <div class="col m6">
+                  Tambaram
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m6">
+                  <b>ETA :</b>
+                </div>
+                <div class="col m6">
+                  4hrs
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m6">
+                  <b>Charges :</b>
+                </div>
+                <div class="col m6">
+                  1000 INR
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col m3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/r4.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"><b>Order ID 1080</b><i class="material-icons right">more_vert</i></span>
+            <p><a href="r4.html">View On Map</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"><b>Order ID 1080</b><i class="material-icons right">close</i></span>
+            <div class="container">
+              <br>
+              <div class="row">
+                <div class="col m6">
+                  <b>Reg . No :</b>
+                </div>
+                TN 04 5671
+                <div class="col m6">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m6">
+                  <b>From :</b>
+                </div>
+                <div class="col m6">
+                  Vadapalani
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m6">
+                  <b>To :</b>
+                </div>
+                <div class="col m6">
+                  Tambaram
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m6">
+                  <b>ETA :</b>
+                </div>
+                <div class="col m6">
+                  4hrs
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m6">
+                  <b>Charges :</b>
+                </div>
+                <div class="col m6">
+                  1000 INR
+                </div>
+              </div>
+            </div>
+            <p>The truck contains hardware for manufacturing of computer hardwares</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+ <script type="text/javascript">
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+ </script>
+
+
+  </body>
+</html>
